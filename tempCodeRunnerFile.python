@@ -1,0 +1,15 @@
+import sys
+sys.path.append("c:\\users\\rajat\\anaconda3\\lib\\site-packages")
+import cv2
+from matplotlib import pyplot as plt
+for i in range(100):
+    
+    cap = cv2.VideoCapture(i)
+    ret, frame = cap.read()
+    if(ret==True):
+        print(i)
+        break
+        
+    else:
+        continue
+
