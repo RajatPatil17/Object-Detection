@@ -1,7 +1,5 @@
 
 import cv2
-import matplotlib.pyplot as plt
-from IPython.display import clear_output
 thres = 0.5
 cap = cv2.VideoCapture(0)
 cap.set(3,1280)     
