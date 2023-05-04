@@ -43,11 +43,16 @@ class hsv_values():
                   "L_limit":[22,50,20],
                   "U_limit":[32,255,255]
                   
+              },
+              "9":{#white
+                "L_limit":[0,0,100],
+                "U_limit":[180,25,255]
+                  
               }
         }
         
     def main(self):
-        clr = input("Which color do you want to detect?\n\n1:BLUE \n2:RED \n3:GREEN\n4:ORANGE \n5:BLACK \n6:PINK \n7:MAGENTA \n8:YELLOW \n\n")
+        clr = input("Which color do you want to detect?\n\n1:BLUE \n2:RED \n3:GREEN\n4:ORANGE \n5:BLACK \n6:PINK \n7:MAGENTA \n8:YELLOW \n9:WHITE \n\n")
         cap = cv2.VideoCapture(0)
         
         while True:
